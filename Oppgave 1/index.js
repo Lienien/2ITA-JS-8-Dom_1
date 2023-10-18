@@ -14,14 +14,13 @@ function convertToFahrenheit(temp) {
 }
 
 tocelsiusbtn.addEventListener("click", function () {
-  console.log("click");
   const temp = parseFloat(tempInput.value);
   const celsius = convertToCelsius(temp);
-  // result.textContent = `${temp} grader Fahrenheit tilsvarer ${celsius.toFixed(1)} grader Celsius.`;
+  result.textContent = `${temp} grader Fahrenheit tilsvarer ${celsius.toFixed(1)} grader Celsius.`;
 });
 
 tofahrenheitbtn.addEventListener("click", function () {
   const temp = parseFloat(tempInput.value);
   const fahrenheit = convertToFahrenheit(temp);
-  // result.textContent = `${temp} grader Celsius tilsvarer ${fahrenheit.toFixed(1)} grader Fahrenheit.`;
+  result.textContent = `${temp} grader Celsius tilsvarer ${fahrenheit.toFixed(1)} grader Fahrenheit.`;
 });
